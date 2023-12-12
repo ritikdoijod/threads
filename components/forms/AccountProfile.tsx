@@ -100,14 +100,14 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col justify-start gap-10"
+        className="flex flex-col justify-start gap-5"
       >
         <FormField
           control={form.control}
           name="profile_photo"
           render={({ field }) => {
             return (
-              <FormItem className="flex items-center gap-4">
+              <FormItem className="flex items-center gap-2">
                 <FormLabel className="account-form_image-label">
                   {field.value ? (
                     <Image
@@ -147,7 +147,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
           name="name"
           render={({ field }) => {
             return (
-              <FormItem className="flex flex-col gap-3 w-full">
+              <FormItem className="flex flex-col gap-1 w-full">
                 <FormLabel className="text-base-semibold text-light-2">
                   Name
                 </FormLabel>
@@ -167,7 +167,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
           name="username"
           render={({ field }) => {
             return (
-              <FormItem className="flex flex-col w-full gap-3">
+              <FormItem className="flex flex-col w-full gap-1">
                 <FormLabel className="text-base-semibold text-light-2">
                   Username
                 </FormLabel>
@@ -187,7 +187,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
           name="bio"
           render={({ field }) => {
             return (
-              <FormItem className="flex flex-col w-full gap-3">
+              <FormItem className="flex flex-col w-full gap-1">
                 <FormLabel className="text-base-semibold text-light-2">
                   Bio
                 </FormLabel>
